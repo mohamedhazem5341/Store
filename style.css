@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+body {
+    background-color: #333;
+    background-image: url(/img/bg3.png);
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.header {
+    max-width: 97%;
+    background: rgba(0, 248, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px 5px 40px 5px;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 0px auto;
+    max-width: 60%;
+    min-width: 40%;
+    height: 100px;
+}
+
+.add-btn .btn:hover {
+    font-size: 1.5rem;
+    background: rgba(0, 247, 255, 0.301);
+}
+
+.btn {
+    cursor: pointer;
+    background: rgba(0, 248, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+}
+
+.add-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: rgba(0, 248, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: none;
+}
+
+.d-b {
+    display: flex;
+}
+
+.close {
+    width: 10%;
+    margin: 2rem 1rem 0rem auto;
+    text-align: center;
+}
+
+.icon-cross {
+    cursor: pointer;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    color: rgb(0, 247, 255);
+    transition: all .2s ease;
+}
+
+.icon-cross:hover {
+    color: rgb(0, 187, 156);
+}
+
+form {
+    margin: 6rem auto 0rem auto;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background: rgba(5, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8) inset;
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    max-width: 100%;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.input-1 {
+    text-align: center;
+    width: clamp(50%, 100%, 250px);
+}
+
+input[type=file]::file-selector-button {
+    display: none;
+}
+
+.file-1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1122px) {
+    .file-1 {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.my-file-upload {
+    text-align: center;
+    cursor: pointer;
+    background: rgba(5, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    max-width: 100%;
+    transition: all .3s ease;
+}
+
+.my-file-upload:hover {
+    background: rgba(0, 122, 122, 0.753);
+    font-size: 1.8rem;
+}
+
+.my-file-upload:active {
+    background: rgba(0, 77, 77, 0.753);
+}
+
+textarea {
+    background: rgba(5, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8) inset;
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    width: clamp(50%, 100%, 250px);
+    height: 100px;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    resize: none;
+    margin: 1rem;
+    padding: .5rem 1rem;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+.done-btn {
+    cursor: pointer;
+    background: rgba(0, 248, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+}
+
+form .done-btn:hover {
+    font-size: 1.5rem;
+    background: rgba(0, 247, 255, 0.301);
+}
+
+.main-store {
+    background: rgba(0, 248, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 95%;
+    margin: 50px auto 0px auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    background: rgba(5, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: clamp(200px, 20%, 25%);
+    padding: 10px;
+    margin: 1rem;
+    transition: all 1s ease;
+}
+.del{
+    transform: translateY(15rem);
+    opacity: 0;
+}
+
+.card-img1 {
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+.card-img {
+    max-width: 100%;
+    height: 195px;
+    object-fit: fill;
+}
+
+.card-img1 {
+    height: 200px;
+    /* Set the desired height of the card */
+    display: flex;
+    /* Ensure the card container behaves as a flex container */
+    align-items: center;
+    /* Center content vertically within the card */
+    justify-content: center;
+    /* Center content horizontally within the card */
+    overflow: hidden;
+    /* Ensure the image does not overflow the card */
+}
+
+.card-img1 img {
+    width: 100%;
+    /* Ensure the image takes up the full width of the card */
+    height: auto;
+    /* Allow the image to adjust its height proportionally */
+    object-fit: cover;
+    /* Scale the image to cover the entire container */
+}
+
+.card-name {
+    padding: .5rem;
+}
+
+.card-name h2 {
+    font-size: 1.6rem;
+    word-wrap: break-word;
+}
+
+.card-about {
+    padding: .5rem;
+    max-height: 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.card-about::-webkit-scrollbar {
+    width: 5px;
+    background: #00d0d79c;
+}
+
+.card-about::-webkit-scrollbar-thumb {
+    background: #005750;
+}
+
+.card-about p {
+    font-size: 1rem;
+    opacity: .8;
+    word-wrap: break-word;
+    height: 50px;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+    margin: .5rem;
+}
+
+.card-btn .buy-btn {
+    cursor: pointer;
+    background: rgba(0, 245, 253, 0.512);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.2rem;
+    padding: .2rem 1rem;
+    color: #000;
+    border: none;
+    transition: all 0.3s ease;
+    margin: .3rem;
+}
+.del-btn{
+    cursor: pointer;
+    background: rgba(253, 0, 0, 0.512);
+    box-shadow: 0 8px 32px 0 rgba(84, 84, 92, 0.37);
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.2rem;
+    padding: .2rem 1rem;
+    color: #000;
+    border: none;
+    transition: all 0.3s ease;
+    margin: .3rem;
+}
+
+.del-btn:hover{
+    background: rgba(253, 0, 0, 0.792);
+
+}
+.del-btn:active{
+    background: rgba(135, 1, 1, 0.792);
+
+}
+.card-btn .buy-btn:hover {
+    background: rgba(0, 248, 255, 0.15);
+}
+
+.card-btn .buy-btn:active {
+    background: rgba(0, 140, 145, 0.756);
+}

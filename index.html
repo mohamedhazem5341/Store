@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/icomoon/style.css">
+    <script defer src="main.js"></script>
+    <title>Store</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Store</h1>
+    </div>
+
+    <div class="add-btn">
+      <button class="btn">Add Product</button>
+    </div>
+
+    <div id="main" class="main-store">
+    </div>
+
+    <div class="add-section">
+      <div class="close">
+        <span class="icon-cross"></span>
+      </div>
+      <form>
+        <div class="file-1">
+          <label for="file-upload" class="my-file-upload">Upload image</label>
+          <input class="input-1" id="file-upload" type="file" required>
+        </div>
+        <input class="input-2" type="text" placeholder="Product Name" maxlength="12" required>
+        <textarea id="about-product" placeholder="Product Describe" maxlength="64" required></textarea>
+
+        <button class="done-btn">Done</button>
+      </form>
+    </div>
+  </body>
+</html>
